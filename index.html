@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИТПИ ВШНИ | Институт Традиционного Прикладного Искусства</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+    <div class="container header__container">
+        <a href="index.html" class="logo">ИТПИ <span>ВШНИ</span></a>
+        
+        <div class="header__right">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link active">Главная</a></li>
+                    <li><a href="admissions.html" class="nav__link">Абитуриенту</a></li>
+                    <li><a href="#" class="nav__link">Студентам</a></li>
+                    <li><a href="#" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <button class="a11y-toggle" id="a11yBtn" aria-label="Версия для слабовидящих">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+            </button>
+            
+            <button class="burger" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <!-- 1. Главный экран -->
+        <section class="hero">
+            <div class="container hero__content">
+                <h1 class="hero__title">Традиции, воплощенные в будущем</h1>
+                <p class="hero__subtitle">Московский филиал Высшей школы народных искусств.</p>
+                <p class="hero__subtitle2">Готовим мастеров, дизайнеров и хранителей культурного кода России.</p>
+                <div class="hero__buttons">
+                    <a href="admissions.html" class="btn btn--primary">Подать документы</a>
+                    <a href="#" class="btn btn--outline">День открытых дверей</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Быстрый доступ (Роли) -->
+        <section class="quick-links container">
+            <div class="quick-links__grid">
+                <a href="admissions.html" class="link-card">
+                    <h3 class="link-card__title">Абитуриенту</h3>
+                    <p class="link-card__text">Правила приема, сроки, списки и документы</p>
+                </a>
+                <a href="#" class="link-card">
+                    <h3 class="link-card__title">Студенту</h3>
+                    <p class="link-card__text">Расписание, ЭИОС, стипендии и практика</p>
+                </a>
+                <a href="#" class="link-card">
+                    <h3 class="link-card__title">Сведения об организации</h3>
+                    <p class="link-card__text">Документы, лицензии и аккредитация</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. Направления подготовки -->
+        <section class="features container">
+            <h2 class="section-title">Направления подготовки</h2>
+            <div class="features__grid">
+    <article class="card">
+        <img src="vishivka.jpg" alt="Процесс художественной вышивки" class="card__image">
+        <h3 class="card__title">Художественная вышивка</h3>
+        <p class="card__text">Моделирование и создание уникальных текстильных произведений с использованием традиционных техник.</p>
+        <a href="#" class="card__link">Подробнее →</a>
+    </article>
+    <article class="card">
+        <img src="rospis.jpg" alt="Декоративная роспись" class="card__image">
+        <h3 class="card__title">Декоративная роспись</h3>
+        <p class="card__text">Изучение классических школ росписи и их интеграция в современный дизайн интерьера.</p>
+        <a href="#" class="card__link">Подробнее →</a>
+    </article>
+    <article class="card">
+        <img src="promisli.png" alt="Народные промыслы и керамика" class="card__image">
+        <h3 class="card__title">Народные промыслы</h3>
+        <p class="card__text">Сохранение и развитие уникальных ремесел: Федоскино, Гжель, Хохлома и другие.</p>
+        <a href="#" class="card__link">Подробнее →</a>
+    </article>
+</div>
+        </section>
+
+        <!-- 4. Новости и события -->
+        <section class="news container">
+            <h2 class="section-title">Новости и события</h2>
+            <div class="news__grid">
+                <article class="news-card">
+                    <time class="news-card__date" datetime="2026-11-20">20 ноября 2026</time>
+                    <h3 class="news-card__title">Студенты ИТПИ представили работы на Всемирной ассамблее</h3>
+                    <p class="news-card__excerpt">Наши учащиеся приняли участие в международной выставке, получив высокую оценку экспертов...</p>
+                </article>
+                <article class="news-card">
+                    <time class="news-card__date" datetime="2026-11-15">15 ноября 2026</time>
+                    <h3 class="news-card__title">Открытие выставки «Итоги пленэра»</h3>
+                    <p class="news-card__excerpt">Приглашаем всех желающих посетить ежегодную выставку работ студентов 3 курса.</p>
+                </article>
+                <article class="news-card">
+                    <time class="news-card__date" datetime="2026-11-10">10 ноября 2026</time>
+                    <h3 class="news-card__title">Изменения в графике работы библиотеки</h3>
+                    <p class="news-card__excerpt">С 1 декабря библиотека переходит на зимний режим работы. Ознакомьтесь с новым расписанием.</p>
+                </article>
+            </div>
+            <div class="center-btn">
+                <a href="#" class="btn btn--outline-dark">Все новости</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p class="footer__copyright">© 2026 ИТПИ ВШНИ. Все права защищены.</p>
+                <p class="footer__address">г. Москва, ул. Мусы Джалиля, д. 14, корп. 2</p>
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+74953952767">+7 (495) 395-27-67</a>
+                <a href="mailto:info@itpi-mf.ru">info@itpi-mf.ru</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
