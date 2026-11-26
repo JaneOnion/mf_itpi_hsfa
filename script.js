@@ -90,5 +90,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // 5. Инициализация при загрузке страницы
     applyA11ySettings();
 });
-// 5. Инициализация при загрузке страницы
-document.addEventListener('DOMContentLoaded', applyA11ySettings);
