@@ -380,6 +380,7 @@ h1, h2, h3 {
 .info-block .btn--primary {
     background-color: var(--color-primary);
     color: var(--color-white);
+     margin-top: var(--spacing-md);
 }
 
 .info-block .btn--primary:hover {
