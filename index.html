@@ -24,12 +24,30 @@
                 </ul>
             </nav>
             
-            <button class="a11y-toggle" id="a11yBtn" aria-label="Версия для слабовидящих">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-            </button>
+           <div class="a11y-wrapper">
+    <button class="a11y-toggle" id="a11yToggleBtn" aria-label="Открыть настройки для слабовидящих">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+    </button>
+    
+    <div class="a11y-panel" id="a11yPanel">
+        <div class="a11y-section">
+            <span class="a11y-label">Размер шрифта:</span>
+            <button class="a11y-option" data-size="normal">А</button>
+            <button class="a11y-option" data-size="large">А+</button>
+            <button class="a11y-option" data-size="xlarge">А++</button>
+        </div>
+        <div class="a11y-section">
+            <span class="a11y-label">Цвет сайта:</span>
+            <button class="a11y-option a11y-color-btn" data-color="default">Обычный</button>
+            <button class="a11y-option a11y-color-btn" data-color="black-white">Чёрным по белому</button>
+            <button class="a11y-option a11y-color-btn" data-color="white-black">Белым по чёрному</button>
+        </div>
+        <button class="a11y-reset" id="a11yResetBtn">Сбросить настройки</button>
+    </div>
+</div>
             
             <button class="burger" aria-label="Открыть меню">
                 <span></span><span></span><span></span>
