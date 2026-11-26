@@ -1,9 +1,9 @@
 /* --- Сброс и переменные --- */
 :root {
-    --color-primary: #8B3A3A; /* Терракотовый */
+    --color-primary: #8B3A3A;
     --color-primary-hover: #6D2C2C;
-    --color-secondary: #2C4A3E; /* Приглушенный изумрудный */
-    --color-bg: #FAFAF8; /* Теплый белый */
+    --color-secondary: #2C4A3E;
+    --color-bg: #FAFAF8;
     --color-text: #2D2D2D;
     --color-text-light: #666666;
     --color-white: #FFFFFF;
@@ -71,7 +71,6 @@ h1, h2, h3 {
     height: 70px;
 }
 
-/* Новый класс — группирует меню и кнопку справа */
 .header__right {
     display: flex;
     align-items: center;
@@ -147,11 +146,8 @@ h1, h2, h3 {
     opacity: 0.9;
 }
 
-.hero__subtitle2 {
-    font-size: 1.2rem;
-    max-width: 720px;
-    margin: 0 auto var(--spacing-lg);
-    opacity: 0.9
+.hero__subtitle:last-child {
+    margin-bottom: var(--spacing-lg);
 }
 
 .hero__buttons {
@@ -168,13 +164,12 @@ h1, h2, h3 {
 
 /* --- Кнопки --- */
 .btn {
-     display: inline-block;
+    display: inline-block;
     padding: 0.8rem 1.5rem;
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    margin: 0 var(--spacing-sm);
     min-width: 240px;
     text-align: center;
 }
@@ -265,6 +260,7 @@ h1, h2, h3 {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -272,10 +268,10 @@ h1, h2, h3 {
 }
 
 .card__image {
-     width: calc(100% + var(--spacing-lg) * 2);
+    width: calc(100% + var(--spacing-lg) * 2);
     height: 200px;
-    object-fit: cover;      
-    object-position: center; 
+    object-fit: cover;
+    object-position: center;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     margin: calc(-1 * var(--spacing-lg)) calc(-1 * var(--spacing-lg)) var(--spacing-md) calc(-1 * var(--spacing-lg));
     display: block;
@@ -354,32 +350,6 @@ h1, h2, h3 {
     color: var(--color-white);
 }
 
-/* --- Страница абитуриента --- */
-.page-content {
-    padding: var(--spacing-xl) var(--spacing-md);
-    flex: 1;
-}
-
-.info-block {
-    background: var(--color-white);
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    margin-bottom: var(--spacing-lg);
-    border-left: 4px solid var(--color-primary);
-}
-
-.info-block h2 {
-    margin-bottom: var(--spacing-md);
-}
-
-.note {
-    margin-top: var(--spacing-md);
-    font-size: 0.9rem;
-    color: var(--color-text-light);
-    font-style: italic;
-}
-
 /* --- Подвал --- */
 .footer {
     background-color: var(--color-secondary);
@@ -408,7 +378,7 @@ h1, h2, h3 {
     opacity: 1;
 }
 
-/* --- Версия для слабовидящих (Профессиональная) --- */
+/* --- Версия для слабовидящих --- */
 .a11y-wrapper {
     position: relative;
     margin-left: var(--spacing-lg);
@@ -439,7 +409,6 @@ h1, h2, h3 {
     display: block;
 }
 
-/* Панель настроек (скрыта по умолчанию) */
 .a11y-panel {
     position: absolute;
     top: 100%;
@@ -451,7 +420,7 @@ h1, h2, h3 {
     padding: var(--spacing-md);
     width: 280px;
     z-index: 200;
-    display: none; /* Скрыто */
+    display: none;
     flex-direction: column;
     gap: var(--spacing-md);
 }
@@ -511,49 +480,52 @@ h1, h2, h3 {
     background: var(--color-primary);
 }
 
-/* === ТЕМЫ ДЛЯ СЛАБОВИДЯЩИХ === */
-
-/* 1. Увеличенный шрифт */
+/* Темы для слабовидящих */
 body.a11y-size-large {
     font-size: 1.2rem !important;
 }
+
 body.a11y-size-xlarge {
     font-size: 1.5rem !important;
 }
 
-/* 2. Чёрным по белому (высокий контраст) */
 body.a11y-color-black-white {
     background-color: #FFFFFF !important;
     color: #000000 !important;
 }
+
 body.a11y-color-black-white * {
     background-color: #FFFFFF !important;
     color: #000000 !important;
     border-color: #000000 !important;
     box-shadow: none !important;
 }
+
 body.a11y-color-black-white img {
     filter: grayscale(100%) contrast(120%) !important;
 }
+
 body.a11y-color-black-white a {
     text-decoration: underline !important;
     font-weight: bold !important;
 }
 
-/* 3. Белым по чёрному (инверсия) */
 body.a11y-color-white-black {
     background-color: #000000 !important;
     color: #FFFFFF !important;
 }
+
 body.a11y-color-white-black * {
     background-color: #000000 !important;
     color: #FFFFFF !important;
     border-color: #FFFFFF !important;
     box-shadow: none !important;
 }
+
 body.a11y-color-white-black img {
     filter: grayscale(100%) invert(100%) contrast(120%) !important;
 }
+
 body.a11y-color-white-black a {
     text-decoration: underline !important;
     font-weight: bold !important;
@@ -564,6 +536,7 @@ body.a11y-color-white-black a {
     .burger {
         display: flex;
     }
+
     .nav {
         position: absolute;
         top: 70px;
@@ -576,31 +549,30 @@ body.a11y-color-white-black a {
         transition: transform 0.3s ease;
         z-index: 99;
     }
+
     .nav.open {
         transform: translateY(0);
     }
+
     .nav__list {
         flex-direction: column;
         gap: var(--spacing-md);
         text-align: center;
     }
+
     .hero__title {
         font-size: 2rem;
     }
+    
     .footer__container {
         flex-direction: column;
         text-align: center;
     }
-    .quick-links {
-        margin-top: var(--spacing-lg);
-    }
-    .stat-item__number {
-        font-size: 2.5rem;
-    }
-     .hero__buttons {
+
+    .hero__buttons {
         flex-direction: column;
         align-items: center;
-        gap: var(--spacing-lg); /* Увеличенный отступ для мобильной версии */
+        gap: var(--spacing-lg);
     }
     
     .hero__buttons .btn {
