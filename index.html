@@ -11,58 +11,59 @@
 </head>
 <body>
     <header class="header">
-    <div class="container header__container">
-        <a href="index.html" class="logo">ИТПИ <span>ВШНИ</span></a>
-        
-        <div class="header__right">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li><a href="index.html" class="nav__link active">Главная</a></li>
-                    <li><a href="admissions.html" class="nav__link">Абитуриенту</a></li>
-                    <li><a href="#" class="nav__link">Студентам</a></li>
-                    <li><a href="#" class="nav__link">Контакты</a></li>
-                </ul>
-            </nav>
+        <div class="container header__container">
+            <a href="index.html" class="logo">ИТПИ <span>ВШНИ</span></a>
             
-           <div class="a11y-wrapper">
-    <button class="a11y-toggle" id="a11yToggleBtn" aria-label="Открыть настройки для слабовидящих">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-            <circle cx="12" cy="12" r="3"></circle>
-        </svg>
-    </button>
-    
-    <div class="a11y-panel" id="a11yPanel">
-        <div class="a11y-section">
-            <span class="a11y-label">Размер шрифта:</span>
-            <button class="a11y-option" data-size="normal">А</button>
-            <button class="a11y-option" data-size="large">А+</button>
-            <button class="a11y-option" data-size="xlarge">А++</button>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link active">Главная</a></li>
+                        <li><a href="admissions.html" class="nav__link">Абитуриенту</a></li>
+                        <li><a href="#" class="nav__link">Студентам</a></li>
+                        <li><a href="#" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="a11y-wrapper">
+                    <button class="a11y-toggle" id="a11yToggleBtn" aria-label="Открыть настройки для слабовидящих">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                    
+                    <div class="a11y-panel" id="a11yPanel">
+                        <div class="a11y-section">
+                            <span class="a11y-label">Размер шрифта:</span>
+                            <button class="a11y-option" data-size="normal">А</button>
+                            <button class="a11y-option" data-size="large">А+</button>
+                            <button class="a11y-option" data-size="xlarge">А++</button>
+                        </div>
+                        <div class="a11y-section">
+                            <span class="a11y-label">Цвет сайта:</span>
+                            <button class="a11y-option a11y-color-btn" data-color="default">Обычный</button>
+                            <button class="a11y-option a11y-color-btn" data-color="black-white">Чёрным по белому</button>
+                            <button class="a11y-option a11y-color-btn" data-color="white-black">Белым по чёрному</button>
+                        </div>
+                        <button class="a11y-reset" id="a11yResetBtn">Сбросить настройки</button>
+                    </div>
+                </div>
+                
+                <button class="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-        <div class="a11y-section">
-            <span class="a11y-label">Цвет сайта:</span>
-            <button class="a11y-option a11y-color-btn" data-color="default">Обычный</button>
-            <button class="a11y-option a11y-color-btn" data-color="black-white">Чёрным по белому</button>
-            <button class="a11y-option a11y-color-btn" data-color="white-black">Белым по чёрному</button>
-        </div>
-        <button class="a11y-reset" id="a11yResetBtn">Сбросить настройки</button>
-    </div>
-</div>
-            
-            <button class="burger" aria-label="Открыть меню">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </div>
-</header>
+    </header>
 
     <main>
-        <!-- 1. Главный экран -->
         <section class="hero">
             <div class="container hero__content">
                 <h1 class="hero__title">Традиции, воплощенные в будущем</h1>
                 <p class="hero__subtitle">Московский филиал Высшей школы народных искусств.</p>
-                <p class="hero__subtitle2">Готовим мастеров, дизайнеров и хранителей культурного кода России.</p>
+                <p class="hero__subtitle">Готовим мастеров, дизайнеров и хранителей культурного кода России.</p>
                 <div class="hero__buttons">
                     <a href="admissions.html" class="btn btn--primary">Подать документы</a>
                     <a href="#" class="btn btn--outline">День открытых дверей</a>
@@ -70,50 +71,50 @@
             </div>
         </section>
 
-        <!-- 2. Быстрый доступ (Роли) -->
         <section class="quick-links container">
             <div class="quick-links__grid">
                 <a href="admissions.html" class="link-card">
+                    <span class="link-card__icon">🎓</span>
                     <h3 class="link-card__title">Абитуриенту</h3>
                     <p class="link-card__text">Правила приема, сроки, списки и документы</p>
                 </a>
                 <a href="#" class="link-card">
+                    <span class="link-card__icon">📚</span>
                     <h3 class="link-card__title">Студенту</h3>
                     <p class="link-card__text">Расписание, ЭИОС, стипендии и практика</p>
                 </a>
                 <a href="#" class="link-card">
+                    <span class="link-card__icon">🏛️</span>
                     <h3 class="link-card__title">Сведения об организации</h3>
                     <p class="link-card__text">Документы, лицензии и аккредитация</p>
                 </a>
             </div>
         </section>
 
-        <!-- 3. Направления подготовки -->
         <section class="features container">
             <h2 class="section-title">Направления подготовки</h2>
             <div class="features__grid">
-    <article class="card">
-        <img src="vishivka.jpg" alt="Процесс художественной вышивки" class="card__image">
-        <h3 class="card__title">Художественная вышивка</h3>
-        <p class="card__text">Моделирование и создание уникальных текстильных произведений с использованием традиционных техник.</p>
-        <a href="#" class="card__link">Подробнее →</a>
-    </article>
-    <article class="card">
-        <img src="rospis.jpg" alt="Декоративная роспись" class="card__image">
-        <h3 class="card__title">Декоративная роспись</h3>
-        <p class="card__text">Изучение классических школ росписи и их интеграция в современный дизайн интерьера.</p>
-        <a href="#" class="card__link">Подробнее →</a>
-    </article>
-    <article class="card">
-        <img src="promisli.png" alt="Народные промыслы и керамика" class="card__image">
-        <h3 class="card__title">Народные промыслы</h3>
-        <p class="card__text">Сохранение и развитие уникальных ремесел: Федоскино, Гжель, Хохлома и другие.</p>
-        <a href="#" class="card__link">Подробнее →</a>
-    </article>
-</div>
+                <article class="card">
+                    <img src="vishivka.jpg" alt="Художественная вышивка" class="card__image">
+                    <h3 class="card__title">Художественная вышивка</h3>
+                    <p class="card__text">Моделирование и создание уникальных текстильных произведений с использованием традиционных техник.</p>
+                    <a href="#" class="card__link">Подробнее →</a>
+                </article>
+                <article class="card">
+                    <img src="rospis.jpg" alt="Декоративная роспись" class="card__image">
+                    <h3 class="card__title">Декоративная роспись</h3>
+                    <p class="card__text">Изучение классических школ росписи и их интеграция в современный дизайн интерьера.</p>
+                    <a href="#" class="card__link">Подробнее →</a>
+                </article>
+                <article class="card">
+                    <img src="promisli.png" alt="Народные промыслы" class="card__image">
+                    <h3 class="card__title">Народные промыслы</h3>
+                    <p class="card__text">Сохранение и развитие уникальных ремесел: Федоскино, Гжель, Хохлома и другие.</p>
+                    <a href="#" class="card__link">Подробнее →</a>
+                </article>
+            </div>
         </section>
 
-        <!-- 4. Новости и события -->
         <section class="news container">
             <h2 class="section-title">Новости и события</h2>
             <div class="news__grid">
@@ -142,8 +143,8 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__info">
-                <p class="footer__copyright">© 2026 ИТПИ ВШНИ. Все права защищены.</p>
-                <p class="footer__address">г. Москва, ул. Мусы Джалиля, д. 14, корп. 2</p>
+                <p>© 2026 ИТПИ ВШНИ. Все права защищены.</p>
+                <p>г. Москва, ул. Мусы Джалиля, д. 14, корп. 2</p>
             </div>
             <div class="footer__contacts">
                 <a href="tel:+74953952767">+7 (495) 395-27-67</a>
