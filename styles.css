@@ -126,7 +126,7 @@ h1, h2, h3 {
 
 /* --- Hero секция --- */
 .hero {
-    background: linear-gradient(rgba(44, 74, 62, 0.8), rgba(44, 74, 62, 0.8)), 
+    background: linear-gradient(rgba(44, 74, 62, 0.8), rgba(44, 74, 62, 0.8)),
                 url('background.jpg') center/cover;
     color: var(--color-white);
     padding: var(--spacing-xl) 0;
@@ -153,10 +153,6 @@ h1, h2, h3 {
     opacity: 0.9
 }
 
-.hero__subtitle:last-child {
-    margin-bottom: var(--spacing-lg);
-}
-
 .hero__buttons {
     display: flex;
     justify-content: center;
@@ -179,6 +175,9 @@ h1, h2, h3 {
     transition: all 0.3s ease;
     min-width: 240px;
     text-align: center;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    line-height: 1;
 }
 
 .btn--primary {
@@ -198,6 +197,16 @@ h1, h2, h3 {
 .btn--outline:hover {
     background-color: var(--color-white);
     color: var(--color-secondary);
+}
+
+.btn--outline-dark {
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn--outline-dark:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
 }
 
 /* --- Быстрый доступ --- */
@@ -268,6 +277,8 @@ h1, h2, h3 {
     box-shadow: var(--shadow);
     transition: transform 0.3s ease;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -288,6 +299,10 @@ h1, h2, h3 {
     font-size: 1.5rem;
     margin-bottom: var(--spacing-sm);
     color: var(--color-primary);
+}
+
+.card__text {
+    flex-grow: 1;
 }
 
 .card__link {
@@ -347,14 +362,38 @@ h1, h2, h3 {
     margin-top: var(--spacing-lg);
 }
 
-.btn--outline-dark {
-    border: 2px solid var(--color-secondary);
-    color: var(--color-secondary);
+/* --- Страница абитуриента --- */
+.page-content {
+    padding: var(--spacing-xl) var(--spacing-md);
+    flex: 1;
 }
 
-.btn--outline-dark:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
+.info-block {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--color-primary);
+}
+
+.info-block h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.info-block p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.info-block a {
+    color: var(--color-primary);
+}
+
+.note {
+    margin-top: var(--spacing-md);
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    font-style: italic;
 }
 
 /* --- Подвал --- */
@@ -388,7 +427,6 @@ h1, h2, h3 {
 /* --- Версия для слабовидящих --- */
 .a11y-wrapper {
     position: relative;
-    margin-left: var(--spacing-lg);
 }
 
 .a11y-toggle {
@@ -570,7 +608,7 @@ body.a11y-color-white-black a {
     .hero__title {
         font-size: 2rem;
     }
-    
+
     .footer__container {
         flex-direction: column;
         text-align: center;
@@ -581,9 +619,17 @@ body.a11y-color-white-black a {
         align-items: center;
         gap: var(--spacing-lg);
     }
-    
+
     .hero__buttons .btn {
         width: 100%;
         max-width: 240px;
+    }
+
+    .quick-links {
+        margin-top: var(--spacing-lg);
+    }
+
+    .page-title {
+        font-size: 2rem;
     }
 }
