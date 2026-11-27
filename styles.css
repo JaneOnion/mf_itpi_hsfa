@@ -151,13 +151,6 @@ h1, h2, h3 {
     opacity: 0.9;
 }
 
-.hero__subtitle2 {
-    font-size: 1.2rem;
-    max-width: 720px;
-    margin: 0 auto var(--spacing-lg);
-    opacity: 0.9
-}
-
 .hero__buttons {
     display: flex;
     justify-content: center;
