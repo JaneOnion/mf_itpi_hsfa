@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИТПИ РУТХП | Сведения об образовательной организации</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">ИТПИ <span>РУТХП</span></a>
+            
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Главная</a></li>
+                        <li><a href="admissions.html" class="nav__link">Абитуриенту</a></li>
+                        <li><a href="#" class="nav__link">Студентам</a></li>
+                        <li><a href="#" class="nav__link">Контакты</a></li>
+                        <li><a href="#" class="nav__link">О нас</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="a11y-wrapper">
+                    <button class="a11y-toggle" id="a11yToggleBtn" aria-label="Версия для слабовидящих">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                    <div class="a11y-panel" id="a11yPanel">
+                        <div class="a11y-section">
+                            <span class="a11y-label">Размер шрифта:</span>
+                            <button class="a11y-option" data-size="normal">А</button>
+                            <button class="a11y-option" data-size="large">А+</button>
+                            <button class="a11y-option" data-size="xlarge">А++</button>
+                        </div>
+                        <div class="a11y-section">
+                            <span class="a11y-label">Цвет сайта:</span>
+                            <button class="a11y-option" data-color="default">Обычный</button>
+                            <button class="a11y-option" data-color="black-white">Чёрным по белому</button>
+                            <button class="a11y-option" data-color="white-black">Белым по чёрному</button>
+                        </div>
+                        <button class="a11y-reset" id="a11yResetBtn">Сбросить настройки</button>
+                    </div>
+                </div>
+                
+                <button class="burger" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h1 class="page-title">Сведения об образовательной организации</h1>
+        
+        <div class="sveden-list">
+            <a href="sveden.html" class="sveden-item">
+                <span class="sveden-item__title">Основные сведения</span>
+            </a>
+            
+            <a href="sveden-structure.html" class="sveden-item">
+                <span class="sveden-item__title">Структура и органы управления образовательной организацией</span>
+            </a>
+            
+            <a href="sveden-documents.html" class="sveden-item">
+                <span class="sveden-item__title">Документы</span>
+            </a>
+            
+            <a href="sveden-education.html" class="sveden-item">
+                <span class="sveden-item__title">Образование</span>
+            </a>
+            
+            <a href="sveden-leadership.html" class="sveden-item">
+                <span class="sveden-item__title">Руководство</span>
+            </a>
+            
+            <a href="sveden-teachers.html" class="sveden-item">
+                <span class="sveden-item__title">Педагогический состав</span>
+            </a>
+            
+            <a href="sveden-material.html" class="sveden-item">
+                <span class="sveden-item__title">Материально-техническое обеспечение и оснащенность образовательного процесса</span>
+            </a>
+            
+            <a href="sveden-accessible.html" class="sveden-item">
+                <span class="sveden-item__title">Доступная среда</span>
+            </a>
+            
+            <a href="sveden-paid.html" class="sveden-item">
+                <span class="sveden-item__title">Платные образовательные услуги</span>
+            </a>
+            
+            <a href="sveden-finance.html" class="sveden-item">
+                <span class="sveden-item__title">Финансово-хозяйственная деятельность</span>
+            </a>
+            
+            <a href="sveden-vacant.html" class="sveden-item">
+                <span class="sveden-item__title">Вакантные места для приёма (перевода) обучающихся</span>
+            </a>
+            
+            <a href="sveden-scholarships.html" class="sveden-item">
+                <span class="sveden-item__title">Стипендии и меры поддержки обучающихся</span>
+            </a>
+            
+            <a href="sveden-international.html" class="sveden-item">
+                <span class="sveden-item__title">Международное сотрудничество</span>
+            </a>
+            
+            <a href="sveden-catering.html" class="sveden-item">
+                <span class="sveden-item__title">Организация питания в образовательной организации</span>
+            </a>
+            
+            <a href="sveden-standards.html" class="sveden-item">
+                <span class="sveden-item__title">Образовательные стандарты и требования</span>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p class="footer__copyright">© 2026 ИТПИ РУТХП. Все права защищены.</p>
+                <p class="footer__address">г. Москва, ул. Мусы Джалиля, д. 14, корп. 2</p>
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+74953952767">+7 (495) 395-27-67</a>
+                <a href="mailto:info@itpi-mf.ru">info@itpi-mf.ru</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
