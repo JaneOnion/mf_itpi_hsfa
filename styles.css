@@ -579,6 +579,78 @@ body.a11y-color-white-black a {
     font-weight: bold !important;
 }
 
+/* --- Таблицы для страницы "Сведения об организации" --- */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-md);
+}
+
+.info-table th,
+.info-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-table th {
+    width: 35%;
+    font-weight: 600;
+    color: var(--color-secondary);
+    background-color: #f9f9f9;
+}
+
+.info-table td {
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.info-table tr:last-child th,
+.info-table tr:last-child td {
+    border-bottom: none;
+}
+
+.doc-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.doc-link:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+}
+
+/* Адаптивность таблиц для мобильных */
+@media (max-width: 768px) {
+    .info-table,
+    .info-table thead,
+    .info-table tbody,
+    .info-table th,
+    .info-table td,
+    .info-table tr {
+        display: block;
+    }
+    
+    .info-table th {
+        width: 100%;
+        background-color: var(--color-bg);
+        border-bottom: none;
+        padding-bottom: var(--spacing-sm);
+    }
+    
+    .info-table td {
+        padding-top: 0;
+        padding-bottom: var(--spacing-md);
+    }
+    
+    .info-table tr {
+        margin-bottom: var(--spacing-md);
+        border-bottom: 2px solid var(--color-primary);
+    }
+    
 /* --- Адаптивность (Mobile) --- */
 @media (max-width: 768px) {
     .burger {
