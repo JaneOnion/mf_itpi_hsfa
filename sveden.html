@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ИТПИ РУТХП | Сведения об организации</title>
+    <title>ИТПИ РУХТП | Сведения об организации</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
-            <a href="index.html" class="logo">ИТПИ <span>РУТХП</span></a>
-               
+            <a href="index.html" class="logo">ИТПИ <span>РУХТП</span></a>
+            
             <div class="header__right">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li><a href="index.html" class="nav__link active">Главная</a></li>
+                        <li><a href="index.html" class="nav__link">Главная</a></li>
                         <li><a href="admissions.html" class="nav__link">Абитуриенту</a></li>
                         <li><a href="#" class="nav__link">Студентам</a></li>
                         <li><a href="#" class="nav__link">Контакты</a></li>
-                        <li><a href="#" class="nav__link">О нас</a></li>
                     </ul>
                 </nav>
-                 <div class="a11y-wrapper">
-                    <button class="a11y-toggle" id="a11yToggleBtn" aria-label="Открыть настройки для слабовидящих">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                
+                <div class="a11y-wrapper">
+                    <button class="a11y-toggle" id="a11yToggleBtn" aria-label="Версия для слабовидящих">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg>
                     </button>
-                    
                     <div class="a11y-panel" id="a11yPanel">
                         <div class="a11y-section">
                             <span class="a11y-label">Размер шрифта:</span>
@@ -41,140 +40,178 @@
                         </div>
                         <div class="a11y-section">
                             <span class="a11y-label">Цвет сайта:</span>
-                            <button class="a11y-option a11y-color-btn" data-color="default">Обычный</button>
-                            <button class="a11y-option a11y-color-btn" data-color="black-white">Чёрным по белому</button>
-                            <button class="a11y-option a11y-color-btn" data-color="white-black">Белым по чёрному</button>
+                            <button class="a11y-option" data-color="default">Обычный</button>
+                            <button class="a11y-option" data-color="black-white">Чёрным по белому</button>
+                            <button class="a11y-option" data-color="white-black">Белым по чёрному</button>
                         </div>
                         <button class="a11y-reset" id="a11yResetBtn">Сбросить настройки</button>
                     </div>
                 </div>
                 
                 <button class="burger" aria-label="Открыть меню">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
             </div>
         </div>
     </header>
 
-    <main class="container main-content">
-        <h1>Сведения об образовательной организации</h1>
+    <main class="container page-content">
+        <h1 class="page-title">Сведения об образовательной организации</h1>
         
-        <section class="info-section">
+        <!-- Основные сведения -->
+        <div class="info-block">
             <h2>Основные сведения</h2>
-            <div class="table-responsive">
-                <table class="info-table">
-                    <tbody>
-                        <tr>
-                            <th>Полное наименование</th>
-                            <td>Институт традиционного прикладного искусства - Московский филиал федерального государственного бюджетного образовательного учреждения высшего образования «Российский университет традиционных художественных промыслов»</td>
-                        </tr>
-                        <tr>
-                            <th>Сокращенное наименование</th>
-                            <td>ИТПИ РУТХП</td>
-                        </tr>
-                        <tr>
-                            <th>Дата создания</th>
-                            <td>26.08.2003, распоряжение Правительства РФ № 1222-р</td>
-                        </tr>
-                        <tr>
-                            <th>Место нахождения</th>
-                            <td>115573, город Москва, улица Мусы Джалиля, дом 14, корпус 2</td>
-                        </tr>
-                        <tr>
-                            <th>Режим и график работы</th>
-                            <td>Понедельник – пятница с 9:00 до 18:00, суббота с 9:00 до 17:00</td>
-                        </tr>
-                        <tr>
-                            <th>Контактные телефоны</th>
-                            <td><a href="tel:+74953952730">+7 (495) 395-27-30</a>; <a href="tel:+74953952767">+7 (495) 395-27-67</a></td>
-                        </tr>
-                        <tr>
-                            <th>Электронная почта</th>
-                            <td><a href="mailto:info@itpi-mf.ru">info@itpi-mf.ru</a></td>
-                        </tr>
-                        <tr>
-                            <th>Лицензия на образовательную деятельность</th>
-                            <td><a href="licen.pdf" target="_blank" rel="noopener">Скачать выписку из реестра лицензий (PDF)</a></td>
-                        </tr>
-                        <tr>
-                            <th>Государственная аккредитация</th>
-                            <td><a href="lic_vip.pdf" target="_blank" rel="noopener">Скачать выписку из реестра аккредитованных организаций (PDF)</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+            <table class="info-table">
+                <tr>
+                    <th>Полное наименование</th>
+                    <td>Институт традиционного прикладного искусства — Московский филиал федерального государственного бюджетного образовательного учреждения высшего образования «Российский университет традиционных художественных промыслов»</td>
+                </tr>
+                <tr>
+                    <th>Сокращённое наименование</th>
+                    <td>ИТПИ РУТХП</td>
+                </tr>
+                <tr>
+                    <th>Дата создания</th>
+                    <td>26 августа 2003 года (распоряжение Правительства РФ № 1222-р)</td>
+                </tr>
+                <tr>
+                    <th>Место нахождения</th>
+                    <td>115573, город Москва, улица Мусы Джалиля, дом 14, корпус 2</td>
+                </tr>
+                <tr>
+                    <th>Режим и график работы</th>
+                    <td>Понедельник — пятница: 9:00 — 18:00<br>Суббота: 9:00 — 17:00</td>
+                </tr>
+                <tr>
+                    <th>Контактные телефоны</th>
+                    <td>
+                        <a href="tel:+74953952730">+7 (495) 395-27-30</a><br>
+                        <a href="tel:+74953952767">+7 (495) 395-27-67</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Адрес электронной почты</th>
+                    <td><a href="mailto:info@itpi-mf.ru">info@itpi-mf.ru</a></td>
+                </tr>
+                <tr>
+                    <th>Лицензия на осуществление образовательной деятельности</th>
+                    <td><a href="#" class="doc-link">Скачать выписку из реестра лицензий (PDF)</a></td>
+                </tr>
+                <tr>
+                    <th>Государственная аккредитация</th>
+                    <td><a href="#" class="doc-link">Скачать выписку из реестра аккредитованных организаций (PDF)</a></td>
+                </tr>
+            </table>
+        </div>
 
-        <section class="info-section">
-            <h2>Сведения об учредителе</h2>
-            <div class="table-responsive">
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th>Наименование учредителя</th>
-                            <th>Юридический адрес</th>
-                            <th>Телефон</th>
-                            <th>Электронная почта</th>
-                            <th>Сайт</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Министерство науки и высшего образования Российской Федерации</td>
-                            <td>125993, г. Москва, ул. Тверская, 11, ГСП-3</td>
-                            <td><a href="tel:+74955395519">+7 (495) 539-55-19</a></td>
-                            <td><a href="mailto:info@minobrnauki.gov.ru">info@minobrnauki.gov.ru</a></td>
-                            <td><a href="https://minobrnauki.gov.ru" target="_blank" rel="noopener">minobrnauki.gov.ru</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <!-- Учредитель -->
+        <div class="info-block">
+            <h2>Учредитель образовательной организации</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Наименование учредителя</th>
+                    <td>Министерство науки и высшего образования Российской Федерации</td>
+                </tr>
+                <tr>
+                    <th>Юридический адрес</th>
+                    <td>125993, г. Москва, ул. Тверская, 11, ГСП-3</td>
+                </tr>
+                <tr>
+                    <th>Контактный телефон</th>
+                    <td><a href="tel:+74955395519">+7 (495) 539-55-19</a></td>
+                </tr>
+                <tr>
+                    <th>Адрес электронной почты</th>
+                    <td><a href="mailto:info@minobrnauki.gov.ru">info@minobrnauki.gov.ru</a></td>
+                </tr>
+                <tr>
+                    <th>Официальный сайт</th>
+                    <td><a href="https://minobrnauki.gov.ru" target="_blank" rel="noopener">https://minobrnauki.gov.ru</a></td>
+                </tr>
+            </table>
+        </div>
 
-        <section class="info-section">
-            <h2>Места проведения практики и практической подготовки</h2>
-            <div class="table-responsive">
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th>№</th>
-                            <th>Наименование и адрес места проведения практики</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>ИТПИ РУТХП, 115573, город Москва, улица Мусы Джалиля, дом 14, корпус 2</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>ООО «Торжокские Золотошвеи», 172007, Тверская обл., г. Торжок, шоссе Калининское, д. 12</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Павловопосадская платочная мануфактура, 142500, Россия, Московская область, г. Павловский Посад, ул. Каляева, д. 5</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>ООО «Ювелир-Консалтинг», 127521, г. Москва, ул. Веткина, д. 4, эт. 4, пом. XIII, ком. 17</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>ООО «Жостовская фабрика», 141036, Московская область, городской округ Мытищи, деревня Жостово, ул. Дивная, стр.15</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <!-- Места осуществления образовательной деятельности -->
+        <div class="info-block">
+            <h2>Места осуществления образовательной деятельности</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Основной адрес</th>
+                    <td>115573, город Москва, улица Мусы Джалиля, дом 14, корпус 2</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Места проведения практики -->
+        <div class="info-block">
+            <h2>Места проведения практики</h2>
+            <table class="info-table">
+                <tr>
+                    <th>№</th>
+                    <th>Организация</th>
+                    <th>Адрес</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ИТПИ РУТХП</td>
+                    <td>115573, город Москва, улица Мусы Джалиля, дом 14, корпус 2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ООО «Торжокские Золотошвеи»</td>
+                    <td>172007, Тверская обл., г. Торжок, шоссе Калининское, д. 12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Павловопосадская платочная мануфактура</td>
+                    <td>142500, Московская область, г. Павловский Посад, ул. Каляева, д. 5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ООО «Ювелир-Консалтинг»</td>
+                    <td>127521, г. Москва, ул. Веткина, д. 4, эт. 4, пом. XIII, ком. 17</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ООО «Жостовская фабрика»</td>
+                    <td>141036, Московская область, городской округ Мытищи, деревня Жостово, ул. Дивная, стр. 15</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Места проведения государственной итоговой аттестации -->
+        <div class="info-block">
+            <h2>Места проведения государственной итоговой аттестации</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Адрес</th>
+                    <td>115573, город Москва, улица Мусы Джалиля, дом 14, корпус 2</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Места осуществления образовательной деятельности по дополнительным программам -->
+        <div class="info-block">
+            <h2>Дополнительные образовательные программы</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Адрес</th>
+                    <td>115573, город Москва, улица Мусы Джалиля, дом 14, корпус 2</td>
+                </tr>
+            </table>
+        </div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 ИТПИ РУТХП. Все права защищены.</p>
-            <p>Адрес: 115573, город Москва, улица Мусы Джалиля, дом 14, корпус 2</p>
-            <p>Телефон: <a href="tel:+74953952730">+7 (495) 395-27-30</a> | Email: <a href="mailto:info@itpi-mf.ru">info@itpi-mf.ru</a></p>
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p class="footer__copyright">© 2026 ИТПИ РУХТП. Все права защищены.</p>
+                <p class="footer__address">г. Москва, ул. Мусы Джалиля, д. 14, корп. 2</p>
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+74953952767">+7 (495) 395-27-67</a>
+                <a href="mailto:info@itpi-mf.ru">info@itpi-mf.ru</a>
+            </div>
         </div>
     </footer>
 
