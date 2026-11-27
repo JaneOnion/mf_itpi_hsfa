@@ -4,24 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ИТПИ РУТХП | Сведения об организации</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header-top">
-                <a href="index.html" class="logo">ИТПИ РУТХП</a>
-                <button id="accessibility-toggle" class="accessibility-btn" aria-label="Переключить версию для слабовидящих">
-                    <span class="icon">👁️</span> <span class="btn-text">Версия для слабовидящих</span>
+        <div class="container header__container">
+            <a href="index.html" class="logo">ИТПИ <span>РУТХП</span></a>
+               
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link active">Главная</a></li>
+                        <li><a href="admissions.html" class="nav__link">Абитуриенту</a></li>
+                        <li><a href="#" class="nav__link">Студентам</a></li>
+                        <li><a href="#" class="nav__link">Контакты</a></li>
+                        <li><a href="#" class="nav__link">О нас</a></li>
+                    </ul>
+                </nav>
+                 <div class="a11y-wrapper">
+                    <button class="a11y-toggle" id="a11yToggleBtn" aria-label="Открыть настройки для слабовидящих">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                    
+                    <div class="a11y-panel" id="a11yPanel">
+                        <div class="a11y-section">
+                            <span class="a11y-label">Размер шрифта:</span>
+                            <button class="a11y-option" data-size="normal">А</button>
+                            <button class="a11y-option" data-size="large">А+</button>
+                            <button class="a11y-option" data-size="xlarge">А++</button>
+                        </div>
+                        <div class="a11y-section">
+                            <span class="a11y-label">Цвет сайта:</span>
+                            <button class="a11y-option a11y-color-btn" data-color="default">Обычный</button>
+                            <button class="a11y-option a11y-color-btn" data-color="black-white">Чёрным по белому</button>
+                            <button class="a11y-option a11y-color-btn" data-color="white-black">Белым по чёрному</button>
+                        </div>
+                        <button class="a11y-reset" id="a11yResetBtn">Сбросить настройки</button>
+                    </div>
+                </div>
+                
+                <button class="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="sveden.html" class="active">Сведения об организации</a></li>
-                    <li><a href="admissions.html">Абитуриенту</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
